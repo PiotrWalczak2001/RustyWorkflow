@@ -4,11 +4,10 @@
 
 ## About
 
-**FlowR** is a tool that facilitates workflows. Simple scenario building with extensive configuration options for managing each of its stages goes hand in hand with speed of execution. The solution will help speed up the implementation of logic responsible for phased execution of activities and keep the project clean and organized.
+**FlowR** is an easy-to-use tool for building workflow scenarios with extensive configuration options for managing each of its stages goes hand in hand with speed of execution. The solution will help speed up the implementation of the logic responsible for the staged execution of activities and keep the project clean and organised. FlowR is designed for early-stage projects where we do not want to make significant architectural decisions at the outset, and for projects that need some complex procedures but do not want to focus on implementing their own solution.
 
 ## Current Features
-
-Well... I've just started...
+(work in progress)
 
 ## Planned Features
 
@@ -20,15 +19,16 @@ Well... I've just started...
 - holding the flow with the possibility of returning to the process
 - configuring reactions to defined events and errors
 - creation of looped flows
-- configuring time limits for the flow and specific activity
+- configuring time limits for the flow and specific action
 - storage of flows
 - different strategies for queuing and execution flows
+- process monitoring and reporting
+- versioning and control of flows
+- retry of flows and individual activities
 
 ## How to use
-
-Below I will demonstrate with some simple examples how this tool can be used
-
 (work in progress)
+
 
 ## How to install
 
