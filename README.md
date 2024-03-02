@@ -27,7 +27,10 @@
 - retry of flows and individual activities
 
 ## How to use
-(work in progress)
+
+Below is a process example showing what one ecommerce workflow might look like and how it can be implemented using flowR.
+
+![example of a process showing what an ecommerce workflow looks like](https://github.com/PiotrWalczak2001/FlowR/blob/main/assets/ecommerce_flow_1.png)
 
 
 ## How to install
