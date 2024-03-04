@@ -27,12 +27,18 @@
 - retry of flows and individual activities
 
 ## How to use
-
-Below is a process example showing what one ecommerce workflow might look like and how it can be implemented using FlowR.
-
-![example of a process showing what an ecommerce workflow looks like](https://github.com/PiotrWalczak2001/FlowR/blob/main/assets/ecommerce_flow_1.png)
-
+(work in progress)
 
 ## How to install
 
 In the future, after the first version is released, there will be an option to install the package from NuGet and through the command line but currently I am only sharing the code
+
+
+## Plans for the distant future
+
+If I manage to complete my project in a minimal version, I will want to create a simple UI for it to manage flows and try it out on several different paths:
+
+- Using flows for testing
+- Containerization of flows
+- FlowR as CI/CD tool
+
