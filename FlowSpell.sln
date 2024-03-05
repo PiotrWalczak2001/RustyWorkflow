@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5B49CD99-0794-4ED0-BB8A-B258B08761BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowSpell.Core", "src\FlowSpell.Core\FlowSpell.Core.csproj", "{A4E6F5CA-AEA8-4A83-81DA-DEAA76B38DCB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "presentation", "presentation", "{23EC0DD1-BD70-45D8-AFF2-4AF7E99C196B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0CE92EF6-2BC3-452A-9231-8B9A5FFAE13B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A4E6F5CA-AEA8-4A83-81DA-DEAA76B38DCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4E6F5CA-AEA8-4A83-81DA-DEAA76B38DCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4E6F5CA-AEA8-4A83-81DA-DEAA76B38DCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4E6F5CA-AEA8-4A83-81DA-DEAA76B38DCB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A4E6F5CA-AEA8-4A83-81DA-DEAA76B38DCB} = {5B49CD99-0794-4ED0-BB8A-B258B08761BB}
+	EndGlobalSection
+EndGlobal

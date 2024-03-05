@@ -1,10 +1,10 @@
-# FlowR
+# FlowSpell
 
-![logo with a centered flower in the background resembling a maze](https://github.com/PiotrWalczak2001/FlowR/blob/main/assets/flowr.png)
+![logo with a centered flower in the background resembling a maze](https://github.com/PiotrWalczak2001/FlowSpell/blob/main/assets/flowspell.png)
 
 ## About
 
-**FlowR** is an easy-to-use tool for building workflow scenarios with extensive configuration options for managing each of its stages goes hand in hand with speed of execution. The solution will help speed up the implementation of the logic responsible for the staged execution of activities and keep the project clean and organised. FlowR is designed for early-stage projects where we do not want to make significant architectural decisions at the outset, and for projects that need some complex procedures but do not want to focus on implementing their own solution.
+**FlowSpell** is an easy-to-use tool for building workflow scenarios with extensive configuration options for managing each of its stages goes hand in hand with speed of execution. The solution will help speed up the implementation of the logic responsible for the staged execution of activities and keep the project clean and organised. FlowSpell is designed for early-stage projects where we do not want to make significant architectural decisions at the outset, and for projects that need some complex procedures but do not want to focus on implementing their own solution.
 
 ## Current Features
 (work in progress)
@@ -40,5 +40,5 @@ If I manage to complete my project in a minimal version, I will want to create a
 
 - Using flows for testing
 - Containerization of flows
-- FlowR as CI/CD tool
+- FlowSpell as CI/CD tool
 
