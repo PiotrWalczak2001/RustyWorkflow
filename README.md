@@ -4,29 +4,34 @@
 
 ## About
 
-**FlowSpell** is an easy-to-use tool for building workflow scenarios with extensive configuration options for managing each of its stages goes hand in hand with speed of execution. The solution will help speed up the implementation of the logic responsible for the staged execution of activities and keep the project clean and organised. FlowSpell is designed for early-stage projects where we do not want to make significant architectural decisions at the outset, and for projects that need some complex procedures but do not want to focus on implementing their own solution.
+**FlowSpell** is a tool to easily create highly configurable workflow scenarios with multiple behaviors handling different events or exceptions. Order tasks to be executed in the background and according to the harmongoram, delay and repeat activities as you need. Manage, create and modify your flows with an intuitive UI downloadable in a separate package, saving you the time you would spend implementing your own solution. In the future, FlowSpell will have tools for third-party integrations and even an innovative flow containerization solution with many capabilities from CI/CD to executing complex processes on other environments. Another helpful feature may be the creation of snapshots of workflows that can be recreated with the same result or changed by adding variables. How you decide to use FlowSpell multitude of functionalities is entirely up to you.
 
 ## Current Features
-(work in progress)
+
+The solution is not yet production-ready and does not have all the functionality described.
+An inventory of current capabilities can be found below:
+
+...well it looks empty here....
 
 ## Planned Features
 
-- creation of activity execution scenarios
+- management of flows through the UI
 - background activities without loss of knowledge of status
 - setting schedules and activating flows in accordance with them
+- storage of flows
+- creating flows by activity snapshots
+- scaling of flows
+- process monitoring and reporting
+- containerisation of flows
 - conditional flow configuration
 - delaying activities
 - holding the flow with the possibility of returning to the process
 - configuring reactions to defined events and errors
 - creation of looped flows
 - configuring time limits for the flow and specific action
-- storage of flows
 - different strategies for queuing and execution flows
-- process monitoring and reporting
 - versioning and control of flows
 - retry of flows and individual activities
-- containerisation of flows
-- management of flows through the UI
 - integration into external flows
 
 ## How to use
