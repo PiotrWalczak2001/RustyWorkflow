@@ -25,6 +25,9 @@
 - process monitoring and reporting
 - versioning and control of flows
 - retry of flows and individual activities
+- containerisation of flows
+- management of flows through the UI
+- integration into external flows
 
 ## How to use
 (work in progress)
@@ -32,13 +35,3 @@
 ## How to install
 
 In the future, after the first version is released, there will be an option to install the package from NuGet and through the command line but currently I am only sharing the code
-
-
-## Plans for the distant future
-
-If I manage to complete my project in a minimal version, I will want to create a simple UI for it to manage flows and try it out on several different paths:
-
-- Using flows for testing
-- Containerization of flows
-- FlowSpell as CI/CD tool
-
