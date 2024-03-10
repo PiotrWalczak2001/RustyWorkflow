@@ -38,6 +38,7 @@ An inventory of current capabilities can be found below:
 
 #### Assemblies
 - an original fresh look at workflows using assemblies
+- support for scaling workflows that overload distributed systems
 
 
 ## How to use
