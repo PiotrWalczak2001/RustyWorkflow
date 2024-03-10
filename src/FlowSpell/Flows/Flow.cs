@@ -1,46 +1,49 @@
-using FlowSpell.Flows.Components.Gateways;
-using FlowSpell.Flows.Components.Stages;
-using FlowSpell.Flows.Configurations;
-using FlowSpell.Flows.Types;
-using FlowSpell.Flows.Types.Identifiers;
+using FlowSpell.Common.Flows.Components;
+using FlowSpell.Common.Types.Identifiers;
+using FlowSpell.Configurations;
+using FlowSpell.Flows.Components;
 
 namespace FlowSpell.Flows;
 
 public class Flow
 {
-    private Flow()
+    private Flow(FlowConfiguration configuration, Queue<IFlowComponent> components)
     {
+        Configuration = configuration;
+        Components = components;
     }
-    public FlowId Id { get; private set; }
+
+    public FlowId Id { get; }
     public FlowConfiguration Configuration { get; private set; }
-    public FlowStatus Status { get; set; }
+    private Queue<IFlowComponent> Components { get; }
 
     internal static Flow Create(Action<FlowConfiguration>? flowConfiguration = null)
     {
-        var flow = new Flow();
         var config = new FlowConfiguration();
         flowConfiguration?.Invoke(config);
-        flow.Configuration = config;
-        flow.Status = FlowStatus.Inactive;
+        var flow = new Flow(config, new Queue<IFlowComponent>());
         return flow;
     }
+
     public Flow AddStage(Action<Stage> stageConfiguration)
     {
         var stage = new Stage();
         stageConfiguration(stage);
+        Components.Enqueue(stage);
         return this;
     }
-    
+
     public Flow AddGateway(Action<Gateway> gatewayConfiguration)
     {
         var gateway = Gateway.Create();
         gatewayConfiguration(gateway);
+        Components.Enqueue(gateway);
         return this;
     }
-    
-    internal async Task<FlowResult> RunAsync()
+
+    public Queue<IFlowComponent> UseFlow()
     {
-        var flowResult = new FlowResult();
-        return flowResult;
+        Configuration.LifeTime.Use();
+        return new Queue<IFlowComponent>(Components);
     }
 }

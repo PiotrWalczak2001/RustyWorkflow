@@ -1,4 +1,4 @@
-namespace FlowSpell.Flows.Types;
+namespace FlowSpell.Common.Types;
 
 public enum FlowStatus
 {
@@ -7,5 +7,5 @@ public enum FlowStatus
     CompletedSuccessfully = 2, // occurs when flow is completed without errors
     CompletedWithErrors = 3, // occurs when flow is completed with errors
     Paused = 4, // occurs when the flow is stopped with the possibility of return
-    Cancelled = 5, // occurs when the flow is interrupted without any possibility of return
+    Cancelled = 5 // occurs when the flow is interrupted without any possibility of return
 }

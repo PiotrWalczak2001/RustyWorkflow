@@ -1,7 +1,7 @@
+using FlowSpell.Configurations;
 using FlowSpell.Flows;
-using FlowSpell.Flows.Configurations;
 
-namespace FlowSpell.Manager;
+namespace FlowSpell.Common.Manager;
 
 public interface IFlowManager
 {
