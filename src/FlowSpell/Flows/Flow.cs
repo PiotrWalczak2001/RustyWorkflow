@@ -7,21 +7,24 @@ namespace FlowSpell.Flows;
 
 public class Flow
 {
-    private Flow(FlowConfiguration configuration, Queue<IFlowComponent> components)
+    private Flow(FlowId flowId, FlowConfiguration configuration, Queue<IFlowComponent> components, uint version)
     {
+        Id = flowId;
         Configuration = configuration;
         Components = components;
+        Version = version;
     }
 
     public FlowId Id { get; }
-    public FlowConfiguration Configuration { get; private set; }
+    public FlowConfiguration Configuration { get; }
     private Queue<IFlowComponent> Components { get; }
+    private uint Version { get; }
 
     internal static Flow Create(Action<FlowConfiguration>? flowConfiguration = null)
     {
         var config = new FlowConfiguration();
         flowConfiguration?.Invoke(config);
-        var flow = new Flow(config, new Queue<IFlowComponent>());
+        var flow = new Flow(new FlowId(Guid.NewGuid()),config, new Queue<IFlowComponent>(), 0);
         return flow;
     }
 
@@ -41,7 +44,7 @@ public class Flow
         return this;
     }
 
-    public Queue<IFlowComponent> UseFlow()
+    public Queue<IFlowComponent> Use()
     {
         Configuration.LifeTime.Use();
         return new Queue<IFlowComponent>(Components);
