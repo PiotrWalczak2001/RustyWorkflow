@@ -7,24 +7,24 @@ namespace FlowSpell.Flows;
 
 public class Flow
 {
-    private Flow(FlowId flowId, FlowConfiguration configuration, Queue<IFlowComponent> components, uint version)
+    private Flow(FlowId flowId, FlowConfiguration configuration, Queue<IFlowStep>? steps, uint version)
     {
         Id = flowId;
         Configuration = configuration;
-        Components = components;
+        Steps = steps ?? new Queue<IFlowStep>();
         Version = version;
     }
 
     public FlowId Id { get; }
     public FlowConfiguration Configuration { get; }
-    private Queue<IFlowComponent> Components { get; }
+    private Queue<IFlowStep> Steps { get; }
     private uint Version { get; }
 
     internal static Flow Create(Action<FlowConfiguration>? flowConfiguration = null)
     {
         var config = new FlowConfiguration();
         flowConfiguration?.Invoke(config);
-        var flow = new Flow(new FlowId(Guid.NewGuid()),config, new Queue<IFlowComponent>(), 0);
+        var flow = new Flow(new FlowId(Guid.NewGuid()),config, new Queue<IFlowStep>(), 0);
         return flow;
     }
 
@@ -32,7 +32,7 @@ public class Flow
     {
         var stage = new Stage();
         stageConfiguration(stage);
-        Components.Enqueue(stage);
+        SetNewStep(stage);
         return this;
     }
 
@@ -40,13 +40,24 @@ public class Flow
     {
         var gateway = Gateway.Create();
         gatewayConfiguration(gateway);
-        Components.Enqueue(gateway);
+        SetNewStep(gateway);
         return this;
     }
 
-    public Queue<IFlowComponent> Use()
+    public Queue<IFlowStep> Use()
     {
         Configuration.LifeTime.Use();
-        return new Queue<IFlowComponent>(Components);
+        return new Queue<IFlowStep>(Steps);
+    }
+
+    private void SetNewStep(IFlowStep newStep)
+    {
+        var lastStep = Steps.LastOrDefault();
+        if (lastStep is Stage lastStage)
+        {
+            lastStage.NextStepId = newStep.Id;
+        }
+
+        Steps.Enqueue(newStep);
     }
 }
