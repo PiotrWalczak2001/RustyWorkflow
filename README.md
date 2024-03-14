@@ -4,6 +4,8 @@
 ## About
 **FlowSpell** is a tool to easily create highly configurable workflow scenarios with multiple behaviors handling different events or exceptions. Order tasks to be executed in the background and according to the harmongoram, delay and repeat activities as you need. Manage, create and modify your flows with an intuitive UI downloadable in a separate package, saving you the time you would spend implementing your own solution. In the future, FlowSpell will have tools for third-party integrations and even an innovative flow containerization solution with many capabilities from CI/CD to executing complex processes on other environments. Another helpful feature may be the creation of snapshots of workflows that can be recreated with the same result or changed by adding variables. How you decide to use FlowSpell multitude of functionalities is entirely up to you.
 
+> *This project was started thanks to the initiative of the #100commit contest, so I apologize for meaningless commits or poor descriptions of commits, but the context of the whole project has evolved over time.*
+
 ## Current features
 The solution is not yet production-ready and does not have all the functionality described.
 An inventory of current capabilities can be found below:
@@ -29,17 +31,23 @@ An inventory of current capabilities can be found below:
 - versioning and control of flows
 - retry of flows and individual activities
 - integration into external flows
+- integration with Azure
+
+#### Redis and LiteDB
+- Most probably Redis will be used to store the state of flows, and for less demanding LiteDB
+
+#### Azure
+- integration with functionalities offered by azure
+
+#### Assemblies
+- an original fresh look at workflows using assemblies
+- support for scaling workflows that overload distributed systems
 
 #### UI
 - management of flows through the UI
 
 #### Scripts
 - adding and running scripts
-
-#### Assemblies
-- an original fresh look at workflows using assemblies
-- support for scaling workflows that overload distributed systems
-
 
 ## How to use
 (work in progress)

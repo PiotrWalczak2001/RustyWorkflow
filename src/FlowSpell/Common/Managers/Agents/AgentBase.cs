@@ -1,6 +1,6 @@
 using FlowSpell.Common.Types.Identifiers;
 
-namespace FlowSpell.Common.Manager.Agents;
+namespace FlowSpell.Common.Managers.Agents;
 
 public abstract class AgentBase : IFlowAgent
 {

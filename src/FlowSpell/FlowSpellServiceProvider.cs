@@ -1,9 +1,9 @@
-using FlowSpell.Common.Manager;
-using FlowSpell.Common.Manager.Agents;
-using FlowSpell.Common.Manager.Flows;
-using FlowSpell.Manager;
-using FlowSpell.Manager.Agents;
-using FlowSpell.Manager.Flows;
+using FlowSpell.Common.Managers.Agents;
+using FlowSpell.Common.Managers.Channels;
+using FlowSpell.Common.Managers.Flows;
+using FlowSpell.Managers.Agents;
+using FlowSpell.Managers.Channels;
+using FlowSpell.Managers.Flows;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace FlowSpell;
@@ -14,6 +14,7 @@ public static class FlowSpellServiceProvider
     {
         services.AddSingleton<IAgentManager, AgentManager>();
         services.AddSingleton<IFlowManager, FlowManager>();
+        services.AddSingleton<IChannelManager, ChannelManager>();
         return services;
     }
 }

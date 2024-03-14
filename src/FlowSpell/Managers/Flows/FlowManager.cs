@@ -1,11 +1,11 @@
-using FlowSpell.Common.Manager.Agents;
-using FlowSpell.Common.Manager.Channels;
-using FlowSpell.Common.Manager.Flows;
+using FlowSpell.Common.Managers.Agents;
+using FlowSpell.Common.Managers.Channels;
+using FlowSpell.Common.Managers.Flows;
 using FlowSpell.Common.Types;
 using FlowSpell.Configurations;
 using FlowSpell.Flows;
 
-namespace FlowSpell.Manager.Flows;
+namespace FlowSpell.Managers.Flows;
 
 public class FlowManager(IAgentManager agentManager, IChannelManager channelManager) : IFlowManager
 {

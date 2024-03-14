@@ -1,6 +1,6 @@
-using FlowSpell.Common.Manager.Agents;
+using FlowSpell.Common.Managers.Agents;
 
-namespace FlowSpell.Manager.Agents;
+namespace FlowSpell.Managers.Agents;
 
 public class AgentManager : IAgentManager
 {

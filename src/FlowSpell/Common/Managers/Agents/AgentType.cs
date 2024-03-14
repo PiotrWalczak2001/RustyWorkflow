@@ -1,4 +1,4 @@
-namespace FlowSpell.Common.Manager.Agents;
+namespace FlowSpell.Common.Managers.Agents;
 
 public enum AgentType
 {

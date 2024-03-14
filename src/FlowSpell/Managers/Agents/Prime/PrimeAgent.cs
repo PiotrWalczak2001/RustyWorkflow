@@ -1,8 +1,8 @@
 using System.Threading.Channels;
 using FlowSpell.Common.Flows.Components;
-using FlowSpell.Common.Manager.Agents;
+using FlowSpell.Common.Managers.Agents;
 
-namespace FlowSpell.Manager.Agents.Prime;
+namespace FlowSpell.Managers.Agents.Prime;
 
 public class PrimeAgent : AgentBase
 {
@@ -17,7 +17,6 @@ public class PrimeAgent : AgentBase
     {
         await foreach (var step in _primeChannelReader.ReadAllAsync())
         {
-            // Przetwarzaj zadanie
         }
     }
 }
