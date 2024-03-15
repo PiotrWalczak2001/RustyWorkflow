@@ -11,6 +11,8 @@ public class Program
         builder.Services.AddRazorComponents()
             .AddInteractiveServerComponents();
 
+        builder.Services.AddFlowSpell();
+
         var app = builder.Build();
 
         if (!app.Environment.IsDevelopment())
