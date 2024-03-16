@@ -1,5 +1,5 @@
 using System.Threading.Channels;
-using FlowSpell.Common.Flows.Components;
+using FlowSpell.Common.Flows.Steps;
 using FlowSpell.Common.Managers.Agents;
 
 namespace FlowSpell.Managers.Agents.Prime;

@@ -1,6 +1,6 @@
 using FlowSpell.Common.Types;
 
-namespace FlowSpell.Common.Flows.Components;
+namespace FlowSpell.Common.Flows.Steps;
 
 public interface IStageActivity
 {

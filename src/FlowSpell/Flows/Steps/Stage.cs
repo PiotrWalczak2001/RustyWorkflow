@@ -1,8 +1,8 @@
-using FlowSpell.Common.Flows.Components;
+using FlowSpell.Common.Flows.Steps;
 using FlowSpell.Common.Types.Identifiers;
 using FlowSpell.Configurations;
 
-namespace FlowSpell.Flows.Components;
+namespace FlowSpell.Flows.Steps;
 
 public class Stage : IFlowStep
 {

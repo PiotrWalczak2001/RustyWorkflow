@@ -1,7 +1,7 @@
-using FlowSpell.Common.Flows.Components;
+using FlowSpell.Common.Flows.Steps;
 using FlowSpell.Common.Types.Identifiers;
 using FlowSpell.Configurations;
-using FlowSpell.Flows.Components;
+using FlowSpell.Flows.Steps;
 
 namespace FlowSpell.Flows;
 
