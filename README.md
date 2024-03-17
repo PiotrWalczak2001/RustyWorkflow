@@ -2,7 +2,7 @@
 ![logo with a centered flower in the background resembling a maze](https://github.com/PiotrWalczak2001/FlowSpell/blob/main/assets/flowspell.png)
 
 ## About
-**FlowSpell** is a tool to easily create highly configurable workflow scenarios with multiple behaviors handling different events or exceptions. Order tasks to be executed in the background and according to the harmongoram, delay and repeat activities as you need. Manage, create and modify your flows with an intuitive UI downloadable in a separate package, saving you the time you would spend implementing your own solution. In the future, FlowSpell will have tools for third-party integrations and even an innovative flow containerization solution with many capabilities from CI/CD to executing complex processes on other environments. Another helpful feature may be the creation of snapshots of workflows that can be recreated with the same result or changed by adding variables. How you decide to use FlowSpell multitude of functionalities is entirely up to you.
+**FlowSpell** is a tool to easily create highly configurable workflow scenarios with multiple behaviours handling different events or exceptions. Order tasks to run in the background and according to the scheduler, delay and repeat actions as needed. Manage, create and modify your workflows using an intuitive user interface that can be downloaded in a separate package, saving you the time you would have spent implementing your own solution. Another useful feature can be the creation of snapshots of workflows, which can be restarted on the same environment or continue the workflow outside of our environment in the cloud, for example. How you choose to use FlowSpell's multitude of features is entirely up to you.
 
 > *This project was started thanks to the initiative of the #100commit contest, so I apologize for meaningless commits or poor descriptions of commits, but the context of the whole project has evolved over time.*
 
@@ -37,6 +37,9 @@ An inventory of current capabilities can be found below:
 - Most probably Redis will be used to store the state of flows, and for less demanding LiteDB
 
 #### Azure
+Thanks to cloud integration, you can secure your most important and critical workflows so that they are completed even in the event of a disaster in your environment.
+
+- run or continue your workflows using azure
 - integration with functionalities offered by azure
 
 #### Assemblies
