@@ -58,4 +58,4 @@ Thanks to cloud integration, you can secure your most important and critical wor
 ## How to install
 In the future, after the first version is released, there will be an option to install the package from NuGet and through the command line but currently I am only sharing the code.
 
-> I am currently expanding my knowledge on topics related to the package 20.03
+> I am currently expanding my knowledge on topics related to the package 20.03.
