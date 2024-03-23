@@ -1,8 +1,8 @@
-# RustyFlower
+# RustyWorkflow
 ![logo with a centered flower in the background resembling a maze](https://github.com/PiotrWalczak2001/RustyFlower/blob/main/assets/rustyflower_logo.png)
 
 ## About
-**RustyFlower** is a rust tool to easily create highly configurable workflow scenarios with multiple behaviours handling different events or exceptions. Order tasks to run in the background and according to the scheduler, delay and repeat actions as needed. Useful feature can be the creation of snapshots of workflows, which can be restarted on the same environment or continue the workflow outside of our environment in the cloud, for example. How you choose to use FlowSpell's multitude of features is entirely up to you.
+**RustyWorkflow** is a rust tool to easily create highly configurable workflow scenarios with multiple behaviours handling different events or exceptions. Order tasks to run in the background and according to the scheduler, delay and repeat actions as needed. Useful feature can be the creation of snapshots of workflows, which can be restarted on the same environment or continue the workflow outside of our environment in the cloud, for example. How you choose to use FlowSpell's multitude of features is entirely up to you.
 
 > *This project was started thanks to the initiative of the #100commit contest, so I apologize for meaningless commits or poor descriptions of commits, but the context of the whole project has evolved over time.*
 
@@ -41,8 +41,8 @@ An inventory of current capabilities can be found below:
 #### Cloud Azure / AWS
 Thanks to cloud integration, you can secure your most important and critical workflows so that they are completed even in the event of a disaster in your environment.
 
-- run or continue your workflows using azure
-- integration with functionalities offered by azure
+- run or continue your workflows using cloud
+- integration with functionalities offered by cloud
 
 ## How to use
 (work in progress)
