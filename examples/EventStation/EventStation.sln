@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleESgRPC", "ExampleESgRPC\ExampleESgRPC.csproj", "{615B1047-80C6-44BC-B3D8-B085E3558983}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleES.gRPC", "ExampleES.gRPC\ExampleES.gRPC.csproj", "{615B1047-80C6-44BC-B3D8-B085E3558983}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleES.Rest", "ExampleES.Rest\ExampleES.Rest.csproj", "{964D6CE7-92C0-4129-83C7-7A5286C28F78}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,6 +14,10 @@ Global
 		{615B1047-80C6-44BC-B3D8-B085E3558983}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{615B1047-80C6-44BC-B3D8-B085E3558983}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{615B1047-80C6-44BC-B3D8-B085E3558983}.Release|Any CPU.Build.0 = Release|Any CPU
+		{964D6CE7-92C0-4129-83C7-7A5286C28F78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{964D6CE7-92C0-4129-83C7-7A5286C28F78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{964D6CE7-92C0-4129-83C7-7A5286C28F78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{964D6CE7-92C0-4129-83C7-7A5286C28F78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
