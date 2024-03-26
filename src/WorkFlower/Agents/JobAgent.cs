@@ -4,20 +4,22 @@ using WorkFlower.Jobs;
 
 namespace WorkFlower.Agents;
 
-public class JobAgent : BackgroundService
+public class JobAgent : IHostedService
 {
-    private JobAgent(WorkflowChannel workflowChannel)
-    {
-        WorkflowChannel = workflowChannel;
-    }
     public WorkflowChannel WorkflowChannel { get; set; }
-
-    public static JobAgent Create(WorkflowChannel workflowChannel)
+    
+    
+    public Task StartAsync(CancellationToken cancellationToken)
     {
-        return new JobAgent(workflowChannel);
+        throw new NotImplementedException();
+    }
+
+    public Task StopAsync(CancellationToken cancellationToken)
+    {
+        throw new NotImplementedException();
     }
     
-    protected override async Task ExecuteAsync(CancellationToken cancellationToken)
+    private async Task ExecuteAsync(CancellationToken cancellationToken)
     {
         await foreach (var job in WorkflowChannel.ReadAllJobsAsync(cancellationToken))
         {

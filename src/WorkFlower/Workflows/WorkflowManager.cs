@@ -7,9 +7,6 @@ public class WorkflowManager(IChannelManager channelManager, IAgentManager agent
 {
     public Task StartWorkflowAsync(Workflow workflow)
     {
-        var channel = channelManager.GetNewChannel();
-        var agent = agentManager.GetNewAgent(channel);
-        
         throw new NotImplementedException();
     }
 }
